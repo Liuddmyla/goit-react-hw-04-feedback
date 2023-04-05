@@ -1,0 +1,15 @@
+.title{
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.stat-text{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.stat-value{
+    font-size: 30px;
+    font-weight: 700;
+}
+
