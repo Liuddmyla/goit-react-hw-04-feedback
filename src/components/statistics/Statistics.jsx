@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
-export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+export default function Statistics ({ good, neutral, bad, total, positivePercentage }) {
   
   return (
     <div className={css['stat-box']}>

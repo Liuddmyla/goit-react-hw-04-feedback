@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-export const FeedbackOptions = ({handleOnClick, options}) => {
+export default function FeedbackOptions({handleOnClick, options}) {
     return (        
         <div className={css['btn-box']}>
             {options.map((option) => {

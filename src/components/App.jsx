@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Statistics } from './statistics/Statistics';
-import { FeedbackOptions } from './feedbackOptions/FeedbackOptions';
-import { Section } from './section/Section';
-import { Notification } from './notification/Notification';
+import  Statistics  from './statistics/Statistics';
+import  FeedbackOptions  from './feedbackOptions/FeedbackOptions';
+import  Section  from './section/Section';
+import  Notification  from './notification/Notification';
 
-const App = () => {
+export default function App() {
   
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
@@ -54,4 +54,4 @@ const App = () => {
   );
 }
  
-export default App;
+

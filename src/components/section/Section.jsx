@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Section.module.css'
 
-export const Section = ({ title, children }) => {
+export default function Section ({ title, children }) {
     return (
         <div className={css.section}>
             <h2 className={css.title}>{title}</h2>
