@@ -2,7 +2,9 @@ import { useState } from 'react';
 import  Statistics  from './statistics/Statistics';
 import  FeedbackOptions  from './feedbackOptions/FeedbackOptions';
 import  Section  from './section/Section';
-import  Notification  from './notification/Notification';
+import Notification from './notification/Notification';
+
+
 
 export default function App() {
   
@@ -41,7 +43,7 @@ export default function App() {
   return (    
     <Section title="Please leave feedback">
 
-      <FeedbackOptions options={['good', 'neutral', 'bad']} handleOnClick={handleOnClick} />          
+    <FeedbackOptions options={Object.keys({ good, neutral, bad })} handleOnClick={handleOnClick} />
         
       {countTotalFeedback() >= 1 ? (<Statistics
         good={good}
